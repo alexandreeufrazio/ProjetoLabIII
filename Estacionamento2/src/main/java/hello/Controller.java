@@ -1,7 +1,6 @@
 package hello;
 
 import static spark.Spark.get;
-
 import java.util.List;
 
 import com.google.gson.Gson;
@@ -42,6 +41,19 @@ public class Controller {
 		
 	}
 	
+	/*public void adicinarVagas() {
+		    get("/vaga/local/titulo/nome/:tituto/:local/:descricao/:requisitos/:desejavel/:formacao", (req, res) -> {
+			
+			
+			model.addVaga2(req.params(":titulo"), req.params(":local"), req.params(":descricao"), req.params(":requisitos"), req.params(":desejavel"), req.params(":formacao"));
+			return null;
+			
+			
+		});
+	}*/
+			
+}
+	
 	
 
-}
+

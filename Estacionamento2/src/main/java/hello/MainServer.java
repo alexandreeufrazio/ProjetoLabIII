@@ -30,13 +30,19 @@ public class MainServer {
 		controller.buscarVagaLocal();
 		controller.buscarVagaTitulo();
 		controller.listaTodasVagas();
+		//controller.adicinarVagas();
+		
+		
+		
 		
     }
     
     public static void inicializarVagas(){
-    	model.addVaga(new Vaga("Analista de Sistemas", "São José dos Campos", "Atuar no desenvolvimento dos aplicativos da empresa", "Conhecimento avançado de Java", "Inglês fluente", "Graduação de TI",  new Empresa("AVIBR", "Aeronautica", "selecao@avibr.com", "www.avibr.com", "Av. Dom Pedro nº100", "12 3944-3367", "Maisa"), new Beneficio("R$5600.00", "Sim", "Sim", "Sim", "R$25.00 ao dia", "Sim", "R$300.00 ao mês", "Sim", "R$500.00")));
+  
+		
+    	model.addVaga(new Vaga("Analista de Sistemas", "São José dos Campos", "Atuar no desenvolvimento dos aplicativos da empresa", "Conhecimento avançado de Java", "Inglês fluente", "Graduação de TI"));
     	
-    	model.addVaga(new Vaga("Analista de Suporte", "São Paulo", "Atuar manutenção e preventicas dos equipamentos de TI", "Conhecimento Hardware e Software", "Certificação Microsoft", "Graduação de TI",  new Empresa("ITTEC", "Consultoria de TI", "selecao@ittec.com", "www.ittec.com", "Av. Dom Bosco nº300", "11 3090-3368", "Isabela"), new Beneficio("R$3500.00", "Sim", "Sim", "Sim", "R$25.00 ao dia", "Sim", "R$500.00 ao mês", "Sim", "R$800.00")));
+    	model.addVaga(new Vaga("Analista de Suporte", "São Paulo", "Atuar manutenção e preventicas dos equipamentos de TI", "Conhecimento Hardware e Software", "Certificação Microsoft", "Graduação de TI"));
     	
     }
 }

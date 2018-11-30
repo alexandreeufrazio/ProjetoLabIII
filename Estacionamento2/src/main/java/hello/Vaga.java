@@ -12,11 +12,10 @@ public class Vaga{
 	private String requisitos; 
 	private String desejavel;
 	private String formacao;
-	private Empresa empr;
-	private Beneficio benef;
+	
 	
 	public Vaga(String titulo, String local, String descricao, String requisitos, String desejavel,
-			String formacao, Empresa empresa, Beneficio beneficio) {
+			String formacao) {
 		this.titulo = titulo;
 		this.local = local;
 		this.descricao = descricao;

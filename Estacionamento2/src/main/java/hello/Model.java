@@ -20,6 +20,13 @@ public class Model{
 		vagas.commit();
 	}
 	
+	/*public void addVaga2(String titulo, String local, String descricao, String requisitos, String desejavel,
+			String formacao) {
+		Vaga vaga = new Vaga(titulo, local, descricao, requisitos, desejavel, formacao);
+		vagas.store(vaga);
+		vagas.commit();
+	}*/
+	
 	public List<Vaga> buscarLocal(String local){
 		Query query = vagas.query();
 		query.constrain(Vaga.class);
@@ -48,20 +55,7 @@ public class Model{
 		return vagasEncontrados;
 	}
 	
-	public List<Vaga> buscarEmpresa(Empresa emp){
-		Query query = vagas.query();
-		query.constrain(Vaga.class);
-	    ObjectSet<Vaga> todasVagas = query.execute();
-	    
-		List<Vaga> vagasEncontrados = new LinkedList<Vaga>();
-		
-		for(Vaga vaga:todasVagas){
-			 if(emp.comparar(vaga.getEmpr())) vagasEncontrados.add(vaga);
-		}
-		
-		return vagasEncontrados;
-		
-	}
+	
 	
 	public List<Vaga> getVagas(){
 		Query query = vagas.query();
@@ -70,5 +64,6 @@ public class Model{
 	    
 		return todasVagas;
 	}
+	
 
 }
