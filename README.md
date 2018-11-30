@@ -1,5 +1,10 @@
 # ProjetoLabIII
-Site de emprego MVC
+## Site de emprego MVC
+
+### Disciplina: Laboratório de Desenvolvimento em Banco de Dados III <br/>
+### Componentes do Grupo:<br/>
+                      Alexandre Eufrazio Ramos
+                      Glauber dos Reis
 
 ![uml](https://user-images.githubusercontent.com/43897137/49312979-09853d00-f4cd-11e8-878d-d73bdc0ebe9c.JPG)
 
